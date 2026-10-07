@@ -2,24 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bobie Sue Hunter - Business Process Consultant</title>
+  <title>Bobie Sue Hunter - Resume</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      /* Dark Theme (Sidebar) */
-      --dark-sidebar: #090d16;        /* Deep obsidian / night */
-      --text-sidebar: #f8fafc;       /* Crisp white */
-      --text-sidebar-muted: #cbd5e1; /* Light slate - 8.9:1 contrast (WCAG AAA) */
-      --accent-teal: #2dd4bf;        /* Deep refined teal */
-      --accent-purple: #c084fc;      /* Subtle royal purple highlight */
+      --dark-sidebar: #0f172a;       /* Deep obsidian / slate 900 */
+      --sidebar-card: #1e293b;       /* Charcoal / slate 800 */
+      --text-sidebar: #f1f5f9;      /* Crisp off-white */
+      --text-sidebar-muted: #94a3b8;/* Cool muted slate */
+      --accent: #38bdf8;             /* Sleek electric cyan / ice blue */
       
-      /* Light Theme (Main Body) */
       --main-bg: #ffffff;
-      --text-main: #0f172a;          /* Slate 900 */
-      --text-main-muted: #334155;    /* Slate 700 - 9.6:1 contrast (WCAG AAA) */
+      --text-main: #0f172a;
+      --text-main-muted: #475569;
       --border-subtle: #e2e8f0;
     }
 
@@ -34,7 +31,7 @@
       background-color: #0b0f17;
       color: var(--text-main);
       padding: 30px 15px;
-      line-height: 1.5;
+      line-height: 1.45;
     }
 
     .resume-wrapper {
@@ -55,28 +52,24 @@
       padding: 36px 24px;
       display: flex;
       flex-direction: column;
-      gap: 26px;
+      gap: 24px;
       border-right: 1px solid #1e293b;
     }
 
-    .sidebar-section h2 {
+    .sidebar-section h3 {
       font-family: 'Montserrat', sans-serif;
-      font-size: 12px;
+      font-size: 11px;
       text-transform: uppercase;
       letter-spacing: 1.5px;
-      color: var(--accent-teal);
+      color: var(--accent);
       margin-bottom: 12px;
       font-weight: 700;
       border-bottom: 1px solid #334155;
       padding-bottom: 4px;
     }
 
-    .contact-list {
-      list-style: none;
-    }
-
     .contact-item {
-      font-size: 13px;
+      font-size: 12.5px;
       color: var(--text-sidebar-muted);
       margin-bottom: 8px;
       word-break: break-word;
@@ -84,15 +77,12 @@
 
     .contact-item a {
       color: var(--text-sidebar);
-      text-decoration: underline;
-      text-decoration-color: var(--accent-teal);
-      text-underline-offset: 3px;
+      text-decoration: none;
       transition: color 0.2s;
     }
 
-    .contact-item a:hover, .contact-item a:focus {
-      color: var(--accent-teal);
-      outline: none;
+    .contact-item a:hover {
+      color: var(--accent);
     }
 
     .competency-block {
@@ -100,46 +90,45 @@
     }
 
     .competency-title {
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 700;
-      color: #f1f5f9;
-      margin-bottom: 2px;
+      color: #e2e8f0;
+      margin-bottom: 3px;
     }
 
     .competency-desc {
-      font-size: 12.5px;
+      font-size: 11.5px;
       color: var(--text-sidebar-muted);
-      line-height: 1.45;
+      line-height: 1.4;
     }
 
     .sidebar-edu {
-      margin-bottom: 16px;
+      margin-bottom: 14px;
     }
 
     .sidebar-degree {
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 700;
-      color: #f1f5f9;
-      line-height: 1.35;
+      color: #e2e8f0;
+      line-height: 1.3;
     }
 
     .sidebar-school {
-      font-size: 12px;
-      color: var(--accent-teal);
+      font-size: 11.5px;
+      color: var(--accent);
       margin-top: 2px;
-      font-weight: 600;
     }
 
     .sidebar-meta {
-      font-size: 12px;
+      font-size: 11px;
       color: var(--text-sidebar-muted);
     }
 
     .sidebar-coursework {
-      font-size: 11.5px;
-      color: var(--text-sidebar-muted);
+      font-size: 11px;
+      color: #94a3b8;
       margin-top: 4px;
-      line-height: 1.4;
+      line-height: 1.35;
     }
 
     /* ================= RIGHT MAIN CONTENT ================= */
@@ -160,17 +149,17 @@
       display: block;
       width: 140px;
       height: 3px;
-      background: linear-gradient(90deg, #090d16, var(--accent-teal), var(--accent-purple), #090d16);
+      background: linear-gradient(90deg, #0f172a, var(--accent), #0f172a);
       margin: 14px auto 0 auto;
       border-radius: 2px;
     }
 
     h1 {
       font-family: 'Montserrat', sans-serif;
-      font-size: 28px;
+      font-size: 27px;
       font-weight: 800;
-      color: var(--text-main);
-      letter-spacing: 2px;
+      color: var(--dark-sidebar);
+      letter-spacing: 2.2px;
       line-height: 1.15;
       text-transform: uppercase;
     }
@@ -179,42 +168,41 @@
       font-family: 'Montserrat', sans-serif;
       font-size: 12.5px;
       font-weight: 700;
-      color: #1e293b;
+      color: #334155;
       margin-top: 8px;
       letter-spacing: 0.6px;
-      text-transform: uppercase;
     }
 
     .header-subtext {
       font-size: 12px;
-      font-weight: 600;
-      color: var(--text-main-muted);
+      font-weight: 500;
+      color: #64748b;
       margin-top: 4px;
       letter-spacing: 0.2px;
     }
 
     .section-title {
       font-family: 'Montserrat', sans-serif;
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 800;
       text-transform: uppercase;
       letter-spacing: 1.4px;
-      color: var(--text-main);
+      color: var(--dark-sidebar);
       border-bottom: 1.5px solid var(--border-subtle);
       padding-bottom: 4px;
       margin-bottom: 14px;
     }
 
     .summary-text {
-      font-size: 13px;
-      color: var(--text-main-muted);
-      line-height: 1.6;
+      font-size: 12.5px;
+      color: #334155;
+      line-height: 1.55;
       text-align: justify;
       margin-bottom: 22px;
     }
 
     .job-entry {
-      margin-bottom: 22px;
+      margin-bottom: 20px;
     }
 
     .job-row {
@@ -224,39 +212,39 @@
     }
 
     .job-company {
-      font-size: 14px;
+      font-size: 13.5px;
       font-weight: 700;
-      color: var(--text-main);
+      color: var(--dark-sidebar);
     }
 
     .job-dates {
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 600;
-      color: var(--text-main-muted);
+      color: #64748b;
     }
 
     .job-title {
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 600;
-      color: #1e293b;
+      color: #334155;
       margin-bottom: 6px;
     }
 
     ul.job-bullets {
-      padding-left: 18px;
+      padding-left: 16px;
     }
 
     ul.job-bullets li {
-      font-size: 12.5px;
-      color: var(--text-main-muted);
+      font-size: 12px;
+      color: #334155;
       margin-bottom: 6px;
-      line-height: 1.5;
+      line-height: 1.45;
     }
 
     .references-footer {
-      font-size: 12px;
+      font-size: 11.5px;
       font-style: italic;
-      color: var(--text-main-muted);
+      color: #64748b;
       text-align: center;
       margin-top: 24px;
       border-top: 1px dashed var(--border-subtle);
@@ -290,33 +278,31 @@
 <div class="resume-wrapper">
   
   <!-- LEFT SIDEBAR -->
-  <aside class="sidebar" aria-label="Contact and Technical Profile">
+  <aside class="sidebar">
     
-    <section class="sidebar-section">
-      <h2>Contact</h2>
-      <ul class="contact-list">
-        <li class="contact-item">Sun Prairie, WI</li>
-        <li class="contact-item"><a href="mailto:bobiesue82@gmail.com">bobiesue82@gmail.com</a></li>
-        <li class="contact-item">608-697-2450</li>
-        <li class="contact-item"><a href="https://www.linkedin.com/in/bobie-hunter-05918b36">linkedin.com/in/bobie-hunter-05918b36</a></li>
-      </ul>
-    </section>
+    <div class="sidebar-section">
+      <h3>Contact</h3>
+      <div class="contact-item">Sun Prairie, WI</div>
+      <div class="contact-item"><a href="mailto:bobiesue82@gmail.com">bobiesue82@gmail.com</a></div>
+      <div class="contact-item">608-697-2450</div>
+      <div class="contact-item"><a href="https://www.linkedin.com/in/bobie-hunter-05918b36">linkedin.com/in/bobie-hunter-05918b36</a></div>
+    </div>
 
-    <section class="sidebar-section">
-      <h2>Core Competencies</h2>
+    <div class="sidebar-section">
+      <h3>Core Competencies</h3>
       
       <div class="competency-block">
-        <div class="competency-title">Analysis & Process Modeling</div>
-        <div class="competency-desc">Business Process Management, Current/Future-State Mapping, Process Discovery, Requirements Engineering, Workflow Optimization.</div>
+        <div class="competency-title">Analysis & Modeling</div>
+        <div class="competency-desc">Enterprise Business & Systems Analysis, Requirements Engineering, Process Mapping, BPM, Workflow Optimization.</div>
       </div>
 
       <div class="competency-block">
-        <div class="competency-title">Methodologies & Governance</div>
-        <div class="competency-desc">Data Governance & Stewardship, Standard Operating Procedures (SOPs), Agile (Scrum/Kanban), SDLC, Change Management.</div>
+        <div class="competency-title">Methodologies</div>
+        <div class="competency-desc">Agile (Scrum/Kanban), SDLC, Data Governance, Change Management, Cross-Functional Leadership.</div>
       </div>
 
       <div class="competency-block">
-        <div class="competency-title">Data & Systems Architecture</div>
+        <div class="competency-title">Data & Architecture</div>
         <div class="competency-desc">Semantic Data Modeling, Relational Databases, SQL/PL-SQL, System Integrations & APIs, Data Quality Assurance.</div>
       </div>
 
@@ -324,96 +310,97 @@
         <div class="competency-title">Tools & Platforms</div>
         <div class="competency-desc">AWS (Redshift, Aurora, DynamoDB), MySQL, Oracle SQL Developer, Power BI, Tableau, MicroStrategy, Python, JavaScript, Java, Git.</div>
       </div>
-    </section>
+    </div>
 
-    <section class="sidebar-section">
-      <h2>Education</h2>
+    <div class="sidebar-section">
+      <h3>Education</h3>
       
       <div class="sidebar-edu">
         <div class="sidebar-degree">B.S. in Strategic Management of Information Systems</div>
         <div class="sidebar-school">Cardinal Stritch University — Milwaukee, WI</div>
-        <div class="sidebar-meta">Graduated: 2014 | GPA: 3.95</div>
-        <div class="sidebar-coursework"><em>Focus:</em> Business Intelligence, IS Architecture, Strategic Management, Enterprise Data Management, Systems Analysis & Design.</div>
+        <div class="sidebar-meta">Graduated: 2015 | GPA: 3.95</div>
+        <div class="sidebar-coursework"><strong>Focus:</strong> Business Intelligence, IS Architecture, Strategic Management, Enterprise Data Management, Systems Analysis & Design.</div>
       </div>
 
       <div class="sidebar-edu">
         <div class="sidebar-degree">A.S. in Web Analysis & Development</div>
         <div class="sidebar-school">Madison College — Madison, WI</div>
-        <div class="sidebar-meta">Graduated: 2015 | GPA: 4.0</div>
-        <div class="sidebar-coursework"><em>Focus:</em> Web Application Dev, Database Programming, Scripting (JavaScript/Java), UI Design, Systems Programming.</div>
+        <div class="sidebar-meta">Graduated: 2012 | GPA: 4.0</div>
+        <div class="sidebar-coursework"><strong>Focus:</strong> Web Application Dev, Database Programming, Scripting (JavaScript/Java), UI Design, Systems Programming.</div>
       </div>
-    </section>
+    </div>
 
   </aside>
 
-  <!-- RIGHT MAIN PANEL -->
+  <!-- RIGHT MAIN CONTENT -->
   <main class="main-content">
     
     <header>
-      <h1>Bobie Sue Hunter</h1>
-      <div class="header-role">Business Process Consultant | Enterprise Business Analyst | Systems Analyst</div>
-      <div class="header-subtext">Core Expertise: Business Process Management &bull; Clinical & Enterprise Systems &bull; Data Governance</div>
+      <h1>BOBIE SUE HUNTER</h1>
+      <div class="header-role">Enterprise Business Analyst | Data Quality Assurance Leader | Business Process Automation Engineer</div>
+      <div class="header-subtext">Core Expertise: ETL & Data Quality Assurance • Business Intelligence & Analytics • Software Development Lifecycle (SDLC)</div>
     </header>
 
-    <section aria-labelledby="summary-title">
-      <h2 id="summary-title" class="section-title">Professional Summary</h2>
+    <section>
+      <div class="section-title">Professional Summary</div>
       <p class="summary-text">
-        Accomplished technology professional with approximately 20 years of enterprise systems experience spanning business process consulting, systems analysis, data governance, and operational workflow optimization. Demonstrated track record evaluating complex organizational procedures, leading stakeholder discovery sessions, and translating intricate business rules into standardized future-state operating models. Brings specialized experience analyzing clinical workflows and deploying statewide systems curricula for healthcare providers within State of Wisconsin public health initiatives, paired with enterprise governance leadership across large-scale benefit platforms.
+
+        Highly experienced technology professional with approximately 20 years of enterprise systems experience spanning roles as a Business Systems Analyst, Web Analyst/Programmer, Data Analyst, Automation Engineer, Business Intelligence Developer, and Report Developer. Proven expertise bridging business operations and technical architecture across large-scale public and private sector initiatives. Adept at facilitating cross-functional requirements gathering, business process management, and Agile SDLC delivery. Brings deep, localized experience supporting complex State of Wisconsin public sector technology systems to deliver functional, enterprise-grade technical solutions.
       </p>
     </section>
 
-    <section aria-labelledby="experience-title">
-      <h2 id="experience-title" class="section-title">Professional Experience</h2>
+    <section>
+      <div class="section-title">Professional Experience</div>
 
-      <article class="job-entry">
+      <div class="job-entry">
         <div class="job-row">
           <span class="job-company">Total Administrative Services Corporation (TASC)</span>
           <span class="job-dates">November 2018 – April 2026</span>
         </div>
         <div class="job-title">Technical Analyst & Data Quality Lead</div>
         <ul class="job-bullets">
-          <li>Led business and systems analysis across enterprise platforms, evaluating operating procedures, identifying process gaps, and establishing functional specifications.</li>
-          <li>Facilitated cross-functional process and requirements discovery sessions with technical teams, business operational leads, and executive stakeholders to define future-state workflows and user stories.</li>
-          <li>Modeled as-is and to-be operational workflows using standard business process management techniques, eliminating redundancies and driving cross-departmental adoption.</li>
-          <li>Founded and chaired the corporate Data Stewards working group, establishing documentation standards, operational policies, and cross-team alignment.</li>
-          <li>Orchestrated complex enterprise systems and data migrations to cloud platforms, ensuring seamless operational transitions and data integrity.</li>
-          <li>Validated system integration points, schemas, and downstream reporting using SQL queries across relational and non-relational database architectures.</li>
+          <li>Led business and systems analysis across enterprise employee benefits platforms, evaluating complex system capabilities and defining functional specifications.</li>
+          <li>Facilitated requirements discovery sessions with cross-functional technical teams, business operational leads, and executive stakeholders to define technical scope and user stories.</li>
+          <li>Orchestrated complex enterprise systems and data migrations to cloud computing platforms, ensuring seamless transitions and data integrity.</li>
+          <li>Modeled as-is and to-be business workflows using standard business process management mapping techniques, eliminating redundancies and driving operational efficiency.</li>
+          <li>Founded and chaired the corporate Data Stewards working group, establishing data quality standards, governance policies, and cross-team alignment.</li>
+          <li>Validated system integration points, schemas, and downstream reporting using SQL queries, working extensively with structured and semi-structured data across various relational and non-relational database types.</li>
         </ul>
-      </article>
+      </div>
 
-      <article class="job-entry">
+      <div class="job-entry">
         <div class="job-row">
           <span class="job-company">American Family Insurance</span>
           <span class="job-dates">January 2018 – October 2018</span>
         </div>
         <div class="job-title">Data Analytics & Automation Operations Liaison</div>
         <ul class="job-bullets">
-          <li>Served as the primary liaison between business operational units and IT engineering teams, translating strategic priorities into actionable workflow improvements.</li>
+          <li>Served as the primary liaison between business units and IT engineering teams, translating strategic business priorities into actionable technical requirements and deliverables.</li>
           <li>Partnered with cross-functional Agile Scrum teams through full SDLC phases to ensure alignment of business objectives with delivered solutions.</li>
           <li>Conducted feasibility studies and technical evaluations for workflow automation and data extraction solutions.</li>
-          <li>Maintained and developed interactive KPI dashboards in Tableau and Power BI, automating refreshes to support data-driven decision-making.</li>
+          <li>Maintained existing and developed new interactive reports and dashboards in Tableau and Power BI to monitor enterprise KPIs, and successfully automated the data refreshes to support data-driven decision-making.</li>
         </ul>
-      </article>
+      </div>
 
-      <article class="job-entry">
+      <div class="job-entry">
         <div class="job-row">
           <span class="job-company">HP Enterprise Services</span>
           <span class="job-dates">2004 – 2012</span>
         </div>
         <div class="job-title">Information Services Developer / Systems Analyst</div>
         <ul class="job-bullets">
-          <li>Supported major State of Wisconsin public sector enterprise systems, leading clinical workflow analysis and implementation for the Wisconsin Immunization Registry (WIR).</li>
-          <li>Traveled statewide to deliver comprehensive systems training and curriculum deployment for healthcare providers, clinical staff, and operational end-users.</li>
-          <li>Partnered with state stakeholders and development teams to resolve workflow ambiguities, evaluate application impacts, and ensure compliance with healthcare standards.</li>
-          <li>Authored standardized system specifications, functional documentation, release notes, and operational procedures for enterprise applications.</li>
+          <li>Supported major State of Wisconsin public sector enterprise systems, including clinical workflow analysis and implementation for the Wisconsin Immunization Registry (WIR).</li>
+          <li>Traveled statewide to conduct comprehensive systems training and curriculum deployment for healthcare providers and clinical end-users.</li>
+          <li>Partnered with state stakeholders and development staff to resolve requirement ambiguities, assess application impacts, and ensure compliance with state standards.</li>
+          <li>Authored system specifications, functional documentation, release notes, and test plans for enterprise applications.</li>
         </ul>
-      </article>
+      </div>
 
     </section>
 
-    <footer class="references-footer">
+    <div class="references-footer">
       Professional and personal references from executive leadership, enterprise project management, technical team leads, and colleagues are available upon request.
-    </footer>
+    </div>
 
   </main>
 
